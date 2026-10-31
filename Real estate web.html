@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Properties | Real Estate</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #19304f;
+        }
+
+        .skyNav {
+            background: #092c52;
+        }
+
+        .skyHero {
+            background: linear-gradient(90deg, #071e38df, #071e3840),
+            url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=85') center/cover;
+            padding: 120px 0;
+            color: white;
+        }
+
+        .skyHero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .skyBlue {
+            color: #1684f8;
+        }
+
+        .skyBtn {
+            background: #087cf0;
+            color: white;
+            border: none;
+            padding: 11px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .skyBtn:hover {
+            background: #075bb0;
+            color: white;
+        }
+
+        .skyTitle {
+            font-weight: bold;
+            color: #092c52;
+        }
+
+        .skyAboutImg {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .skyService {
+            border: 1px solid #e0e9f5;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .skyService:hover {
+            box-shadow: 0 8px 22px #092c521c;
+            transform: translateY(-5px);
+        }
+
+        .skyIcon {
+            width: 58px;
+            height: 58px;
+            line-height: 58px;
+            text-align: center;
+            background: #e5f1ff;
+            color: #087cf0;
+            border-radius: 50%;
+            font-size: 25px;
+        }
+
+        .skyFeature {
+            padding: 22px 10px;
+        }
+
+        .skyFeature i {
+            font-size: 30px;
+            color: #087cf0;
+            margin-bottom: 15px;
+        }
+
+        .skyContact {
+            background: #edf5ff;
+        }
+
+        .skyContactImg {
+            min-height: 400px;
+            background: linear-gradient(#092c5250, #092c52bb),
+            url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80') center/cover;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            align-items: end;
+            padding: 30px;
+        }
+
+        .skyForm {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px #092c5210;
+        }
+
+        .skyFooter {
+            background: #092c52;
+            color: white;
+        }
+
+        .skyFooter a {
+            color: #d5e5fa;
+            text-decoration: none;
+        }
+
+        .skyFooter a:hover {
+            color: white;
+        }
+
+        .skySocial a {
+            display: inline-block;
+            margin-right: 12px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .skyHero {
+                padding: 80px 0;
+            }
+
+            .skyHero h1 {
+                font-size: 34px;
+            }
+
+            .skyContactImg {
+                min-height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark skyNav sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+            <i class="fa-solid fa-house-chimney me-2"></i>Skyline Properties
+            <small class="d-block ms-4" style="font-size:11px;">REAL ESTATE COMPANY</small>
+        </a>
+
+        <div class="navbar-nav ms-auto flex-row flex-wrap">
+            <a class="nav-link px-2" href="#home">Home</a>
+            <a class="nav-link px-2" href="#about">About</a>
+            <a class="nav-link px-2" href="#services">Services</a>
+            <a class="nav-link px-2" href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="skyHero" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <p class="text-uppercase fw-bold">Find Your Perfect Place</p>
+                <h1>Your Dream Home<br>Awaits You</h1>
+                <p class="lead mt-3">Discover beautiful homes and premium properties
+                that match your lifestyle and budget.</p>
+                <a href="#services" class="skyBtn mt-3">
+                    Explore Properties <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5" id="about">
+    <div class="row align-items-center g-4">
+        <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+                 class="skyAboutImg" alt="Beautiful modern house">
+        </div>
+        <div class="col-md-6">
+            <p class="skyBlue fw-bold">ABOUT OUR COMPANY</p>
+            <h2 class="skyTitle">Building Dreams, Creating Homes</h2>
+            <p>Skyline Properties is a real estate company focused on helping people find
+            their ideal homes and commercial spaces.</p>
+            <p>We believe in quality properties, honest guidance and a smooth property
+            search experience for every customer.</p>
+            <a href="#contact" class="skyBtn">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5 bg-light" id="services">
+    <div class="container">
+        <div class="text-center mb-4">
+            <p class="skyBlue fw-bold">WHAT WE OFFER</p>
+            <h2 class="skyTitle">Our Real Estate Services</h2>
+            <p>Find the right property for your needs.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+                <div class="card skyService h-100">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=700&q=80"
+                         class="card-img-top" alt="Residential property">
+                    <div class="card-body p-4">
+                        <div class="skyIcon mb-3">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <h5 class="fw-bold">Residential Properties</h5>
+                        <p>Explore modern houses, apartments and comfortable family homes.</p>
+                        <a href="#contact" class="btn btn-outline-primary">Know More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="card skyService h-100">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80"
+                         class="card-img-top" alt="Commercial building">
+                    <div class="card-body p-4">
+                        <div class="skyIcon mb-3">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h5 class="fw-bold">Commercial Properties</h5>
+                        <p>Find suitable offices, shops and commercial spaces for your business.</p>
+                        <a href="#contact" class="btn btn-outline-primary">Know More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="card skyService h-100">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=700&q=80"
+                         class="card-img-top" alt="Property planning">
+                    <div class="card-body p-4">
+                        <div class="skyIcon mb-3">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <h5 class="fw-bold">Property Consultation</h5>
+                        <p>Get helpful guidance to explore property options and make informed decisions.</p>
+                        <a href="#contact" class="btn btn-outline-primary">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="text-center mb-4">
+        <p class="skyBlue fw-bold">WHY SKYLINE</p>
+        <h2 class="skyTitle">Why Choose Us?</h2>
+    </div>
+
+    <div class="row g-3 text-center">
+        <div class="col-6 col-md-3">
+            <div class="skyFeature">
+                <i class="fa-solid fa-house-circle-check"></i>
+                <h6 class="fw-bold">Quality Properties</h6>
+                <p class="small">Carefully considered property options.</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <div class="skyFeature">
+                <i class="fa-solid fa-handshake"></i>
+                <h6 class="fw-bold">Trusted Guidance</h6>
+                <p class="small">Support throughout your search.</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <div class="skyFeature">
+                <i class="fa-solid fa-tags"></i>
+                <h6 class="fw-bold">Flexible Choices</h6>
+                <p class="small">Options for different needs.</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <div class="skyFeature">
+                <i class="fa-solid fa-headset"></i>
+                <h6 class="fw-bold">Customer Support</h6>
+                <p class="small">Helpful assistance when needed.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid skyContact py-5" id="contact">
+    <div class="container">
+        <div class="text-center mb-4">
+            <p class="skyBlue fw-bold">GET IN TOUCH</p>
+            <h2 class="skyTitle">Let's Find Your Dream Property</h2>
+            <p>Have a question? Contact our team.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+            <div class="col-md-6">
+                <div class="skyContactImg h-100">
+                    <div>
+                        <h3 class="fw-bold">Your Dream. Our Priority.</h3>
+                        <p>Let's make your property search easier.</p>
+                        <p><i class="fa-solid fa-location-dot me-2"></i>Ahmednagar, Maharashtra</p>
+                        <p><i class="fa-solid fa-envelope me-2"></i>vaishnavikarjule09@gmail.com</p>
+                        <p><i class="fa-solid fa-phone me-2"></i>+91 9356972573</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <form class="skyForm">
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="Enter phone number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-control" placeholder="Property enquiry">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+                    </div>
+
+                    <button type="button" class="btn btn-primary w-100">
+                        Send Enquiry <i class="fa-solid fa-paper-plane ms-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="skyFooter py-4">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-5">
+                <h5 class="fw-bold">
+                    <i class="fa-solid fa-house-chimney me-2"></i>Skyline Properties
+                </h5>
+                <p>Helping you find the right place to call home.</p>
+                <div class="skySocial">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h6 class="fw-bold">Quick Links</h6>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#services">Our Services</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <h6 class="fw-bold">Our Office</h6>
+                <p><i class="fa-solid fa-location-dot me-2"></i>Ahmednagar, Maharashtra</p>
+                <p><i class="fa-solid fa-envelope me-2"></i>vaishnavikarjule09@gmail.com</p>
+                <p><i class="fa-solid fa-phone me-2"></i>+919356974573</p>
+            </div>
+        </div>
+
+        <hr>
+        <
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
